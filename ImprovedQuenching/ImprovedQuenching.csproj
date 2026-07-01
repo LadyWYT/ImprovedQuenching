@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<ItemGroup>
+  <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Content Include="modicon.png" Condition="Exists('modicon.png')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Reference Include="0Harmony">
+    <HintPath>F:\Vintagestory\Lib\0Harmony.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="Newtonsoft.Json">
+    <HintPath>F:\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VintagestoryAPI">
+    <HintPath>F:\Vintagestory\VintagestoryAPI.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VintagestoryLib">
+    <HintPath>F:\Vintagestory\VintagestoryLib.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VSEssentials">
+    <HintPath>F:\Vintagestory\Mods\VSEssentials.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+</ItemGroup>
+
+</Project>

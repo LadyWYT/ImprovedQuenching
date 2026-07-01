@@ -1,0 +1,15 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "improvedquenching",
+    "name": "Improved Quenching",
+    "authors": [
+      "LadyWYT",
+      "traugdor"
+    ],
+    "description": "Less RNG games and more skill required. Choose bonuses carefully!",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.22.3"
+    }
+}
