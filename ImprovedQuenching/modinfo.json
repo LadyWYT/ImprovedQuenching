@@ -8,7 +8,7 @@
       "traugdor"
     ],
     "description": "Less RNG games and more skill required. Choose bonuses carefully!",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": "1.22.3"
     }
